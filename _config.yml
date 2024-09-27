@@ -8,12 +8,12 @@ subtitle: ''
 description: ''
 keywords:
 author: John Doe
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://stays1993.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -40,7 +40,10 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -96,9 +99,14 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/Stays1993/stays1993.github.io
+  # example, https://github.com/hexojs/hexojs.github.io
+  branch: main
+  # token:
